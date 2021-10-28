@@ -4,7 +4,9 @@
 
 
 
-
+#full-page{
+	width: 100vh;	
+}
 
 .card{
 	background-color: black;
