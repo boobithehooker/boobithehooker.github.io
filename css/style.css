@@ -47,10 +47,7 @@ video {
 [class*="col-"] {
     padding: 1rem;
 }
-.footer-icon{
-	height: 29px;
-	width: 29px;
-}
+
 body{
   margin: 0;
   padding: 0;
