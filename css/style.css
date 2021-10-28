@@ -2,6 +2,10 @@
 
 
 
+html{
+	min-width:410px;
+}
+section { overflow: hidden; }
 
 
 
