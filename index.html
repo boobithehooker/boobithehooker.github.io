@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,26 +10,18 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 	<link href="css/style.css" rel="stylesheet">
-
-
-
-
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-
-
-
 </head>
-
 <body>
 	<script>
-		$(document).ready(function(){
-        $('section').css('width',$(window).width());
-        $(window).resize(function(){
-            $('section').css('width',$(window).width());
-            /* and in your CSS: section { overflow: hidden; } */
-        });
-    });
+		$(document).ready(function () {
+			$('section').css('width', $(window).width());
+			$(window).resize(function () {
+				$('section').css('width', $(window).width());
+				/* and in your CSS: section { overflow: hidden; } */
+			});
+		});
 	</script>
 	<div id="loadedPage">
 		<div id="logo">
@@ -48,10 +39,10 @@
 			$(document).ready(function () {
 				//$('.navigation').fadeOut({queue:true},0);
 				$('.navigation').hide();
+				$('#beat-category-guitar-id').fadeIn(500);
 			})
 
 		</script>
-
 		<div class="container-fluid padding border-top border-dark">
 			<div class="row welcome justify-content-around">
 				<div class="col-lg-3 text-center">
@@ -64,10 +55,11 @@
 				<div class="col-lg-3 text-justify">
 					<br>
 					<div class="introduction">
-						I am music producer for about <span class="bold">1,5 years</span>. This site represents my actual
+						I am music producer for about <span class="bold">1,5 years</span>. This site represents my
+						actual
 						place in <span class="bold">"Music Industry"</span>. There are some <span class="bold">loop
-							kits</span>, <span class="bold">beats</span>, contact info & something about me. Also I am programmer & this site is <span
-							class="bold">100% designed by myself.</span>
+							kits</span>, <span class="bold">beats</span>, contact info & something about me. Also I am
+						programmer & this site is <span class="bold">100% designed by myself.</span>
 					</div>
 				</div>
 			</div>
@@ -80,37 +72,31 @@
 				</button>
 				<div class="collapse navbar-collapse" id="navbarResponsive">
 					<ul class="navbar-nav ml-auto">
-					<li class="nav-item">
-						<a href="#beats" class="nav-link">Full Beats</a>
-					</li>
-					<li class="nav-item">
-						<a href="#loop-kits" class="nav-link">Loop Kits</a>
-					</li>
-					<li class="nav-item">
-						<a href="#price-list" class="nav-link">Price List</a>
-					</li>
-					<li class="nav-item">
-						<a href="#contact" class="nav-link">Contact</a>
-					</li>
-					<li class="nav-item">
-						<a href="https://www.instagram.com/fw.boobi/"><img class="footer-icon nav-link" src="img/instagram.png" alt="instagram"></a>
-					</li>
-					<li class="nav-item border-left border-right border-dark">
-						<div class="text-center nav-link">
-							© 2021 Copyright:
-							boobithehooker
-						  </div>
-					</li>
-					
-				</ul>
+						<li class="nav-item">
+							<a href="#beats" class="nav-link">Full Beats</a>
+						</li>
+						<li class="nav-item">
+							<a href="#loop-kits" class="nav-link">Loop Kits</a>
+						</li>
+						<li class="nav-item">
+							<a href="#price-list" class="nav-link">Price List</a>
+						</li>
+						<li class="nav-item">
+							<a href="#contact" class="nav-link">Contact</a>
+						</li>
+						<li class="nav-item">
+							<a href="https://www.instagram.com/fw.boobi/"><img class="footer-icon nav-link"
+									src="img/instagram.png" alt="instagram"></a>
+						</li>
+						<li class="nav-item border-left border-right border-dark">
+							<div class="text-center nav-link">
+								© 2021 Copyright:
+								boobithehooker
+							</div>
+						</li>
+
+					</ul>
 				</div>
-				
-
-
-		
-
-
-
 			</nav>
 		</div>
 		<div class="container-fluid padding border-top border-dark">
@@ -135,9 +121,20 @@
 						<hr class="white">
 					</h1>
 				</div>
-
 			</div>
-			<ul class="audio-players">
+			<div class="row justify-content-center">
+				<div class="col-lg-4 text-center text-light">
+					<h1 class="display-2 beat-category-guitar border-bottom border-dark font-weight-bold">
+						Guitar
+					</h1>
+				</div>
+				<div class="col-lg-4 text-center text-light">
+					<h1 class="display-2 beat-category-lofi border-bottom border-dark">
+						Lofi
+					</h1>
+				</div>
+			</div>
+			<ul id="beat-category-guitar-id" class="audio-players">
 				<li>
 					<div class="audio-player js-audio-player"><button class="audio-player__control js-control">
 							<div class="audio-player__control-icon"></div>
@@ -290,6 +287,48 @@
 						<h4 class="audio-player__title">Breamed <br><br>Prod.(Boobi)</h4><audio preload="auto">
 							<source src="mp3/Breamed_boobi_155BPM_E-[AudioTrimmer.com].mp3" />
 						</audio><img class="audio-player__cover" src="img/thumbnail12.jpg" />
+						<video preload="auto" loop="loop">
+							<source src="" type="video/mp4" />
+						</video>
+					</div>
+					<hr class="white">
+				</li>
+			</ul>
+			<ul id="beat-category-lofi-id" class="audio-players display-none">
+				<li>
+					<div class="audio-player js-audio-player"><button class="audio-player__control js-control">
+							<div class="audio-player__control-icon"></div>
+						</button>
+						<h4 class="audio-player__title">Vento <br><br>Prod.(Boobi & Rrydder)</h4><audio preload="auto">
+							<source src="mp3/vento_rrydder_boobi_155.mp3" />
+						</audio><img class="audio-player__cover" src="img/thumbnail16.jpg" />
+						<video preload="auto" loop="loop">
+							<source src="" type="video/mp4" />
+						</video>
+					</div>
+					<hr class="white">
+				</li>
+				<li>
+					<div class="audio-player js-audio-player"><button class="audio-player__control js-control">
+							<div class="audio-player__control-icon"></div>
+						</button>
+						<h4 class="audio-player__title">Backstage <br><br>Prod.(Boobi & Rrydder)</h4><audio
+							preload="auto">
+							<source src="mp3/backstage_rrydder_boobi_112-[AudioTrimmer.com].mp3" />
+						</audio><img class="audio-player__cover" src="img/thumbnail17.jpg" />
+						<video preload="auto" loop="loop">
+							<source src="" type="video/mp4" />
+						</video>
+					</div>
+					<hr class="white">
+				</li>
+				<li>
+					<div class="audio-player js-audio-player"><button class="audio-player__control js-control">
+							<div class="audio-player__control-icon"></div>
+						</button>
+						<h4 class="audio-player__title">Breamed <br><br>Prod.(Boobi)</h4><audio preload="auto">
+							<source src="mp3/Breamed_boobi_155BPM_E-[AudioTrimmer.com].mp3" />
+						</audio><img class="audio-player__cover" src="img/thumbnail18.jpg" />
 						<video preload="auto" loop="loop">
 							<source src="" type="video/mp4" />
 						</video>
@@ -511,38 +550,22 @@
 					</div>
 				</div>
 			</div>
-			
+
 			<div class="row">
-                <div class="col-lg-12 text-center">
-                    <h1 class="display-2">
-                        <br><a href="https://www.paypal.com/paypalme/boobithehooker">Paypal Me The Money</a>
-                    </h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h1 class="display-4">
-                        <a href="https://www.paypal.com/paypalme/boobithehooker">Add note which Beat & license you are buying</a>
-                    </h1>
-                </div>
-            </div>
-			
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+				<div class="col-lg-12 text-center">
+					<h1 class="display-2">
+						<br><a href="https://www.paypal.com/paypalme/boobithehooker">Paypal Me The Money</a>
+					</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<h1 class="display-4">
+						<a href="https://www.paypal.com/paypalme/boobithehooker">Add note which Beat & license you are
+							buying</a>
+					</h1>
+				</div>
+			</div>
 		</div>
 		<div class="container-fluid padding border-top border-dark">
 			<div class="row">
@@ -554,11 +577,8 @@
 				<div id="beats" class="col-lg-12 text-center text-light">
 					<h1 class="display-1" id="contact">
 						CONTACT
-
 					</h1>
-
 				</div>
-
 			</div>
 			<div class="row justify-content-center">
 				<div class="col-lg-4 text-center text-light">
@@ -566,7 +586,6 @@
 						<hr class="white">
 					</h1>
 				</div>
-
 			</div>
 			<div>
 				<form action="https://formsubmit.co/boobithehooker@gmail.com" method="post">
@@ -577,13 +596,11 @@
 									<input class="input2" type="text" name="name">
 									<span class="focus-input2" data-placeholder="NAME"></span>
 								</div>
-
 								<div class="wrap-input2 validate-input"
 									data-validate="Valid email is required: ex@abc.xyz">
 									<input class="input2" type="text" name="email">
 									<span class="focus-input2" data-placeholder="EMAIL"></span>
 								</div>
-
 								<div class="wrap-input2 validate-input" data-validate="Message is required">
 									<textarea class="input2" name="message"></textarea>
 									<span class="focus-input2" data-placeholder="MESSAGE"></span>
@@ -595,7 +612,8 @@
 										<button type="submit" name="submit" class="contact2-form-btn">
 											Send Your Message
 										</button>
-										<input type="hidden" name="_next" value="https://boobithehooker.github.io/porfolio/sites/thankyou.html">
+										<input type="hidden" name="_next"
+											value="https://boobithehooker.github.io/porfolio/sites/thankyou.html">
 										<input type="hidden" name="_subject" value="new mail from website!">
 									</div>
 								</div>
@@ -603,12 +621,10 @@
 						</div>
 					</div>
 				</form>
-
 			</div>
-
-		</div>
-
-		<script>
+		</div>		
+	</div>
+	<script>
 			window.onscroll = () => {
 				//	if (document.body.scrollTop > 1 || document.documentElement.scrollTop > 1) {
 				if (document.body.scrollTop > 2 || document.documentElement.scrollTop == 0) {
@@ -619,11 +635,35 @@
 
 				}
 			};
+	</script>
+	<script>
+		let beatcategoryguitarid = document.querySelector("#beat-category-guitar-id");
+		let beatcategoryguitar = document.querySelector(".beat-category-guitar");
+		let beatcategorylofi = document.querySelector(".beat-category-lofi");
 
-			
+		let focus = 1;
+		
+		beatcategoryguitar.addEventListener('click',()=>{
+			focus = 1;
+			$(".beat-category-guitar").addClass("font-weight-bold");
+			$(".beat-category-lofi").removeClass("font-weight-bold");
+			$('#beat-category-lofi-id').fadeOut(500);
+			$('#beat-category-guitar-id').fadeIn(500);
+			$("#beat-category-guitar-id").removeClass("display-none");
+			$("#beat-category-lofi-id").addClass("display-none");
 
-		</script>
-	</div>
+
+		})
+		beatcategorylofi.addEventListener('click',()=>{
+			focus = 0;
+			$(".beat-category-lofi").addClass("font-weight-bold");
+			$(".beat-category-guitar").removeClass("font-weight-bold");
+			$('#beat-category-guitar-id').fadeOut(500);
+			$('#beat-category-lofi-id').fadeIn(500);
+			$("#beat-category-guitar-id").addClass("display-none");
+			$("#beat-category-lofi-id").removeClass("display-none");
+		})
+		
+	</script>
 </body>
-
 </html>
