@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+
+
+html{
+	min-width:410px;
+}
+section { overflow: hidden; }
+
+
+
+
+.card{
+	background-color: black;
+	color: white;
+	font-size: 4vh;
+}
+.display-none{
+	display: none;
+}
+
+img,
+video {
+	max-width: 100%;
+	height: auto;
+}
+/*---Media Queries --*/
+@media (max-width: 992px) {
+
+  }
+@media (max-width: 768px) {
+  
+}
+@media (max-width: 576px) {
+  
+}
+.img-thumbnail{
+	height: 40vh;
+	
+}
+
+
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: #FFF;
+}
+#logo{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url('../img/R1.png');
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  background-position-x: center;
+  background-size: cover;
+  opacity: 0.2;
+}
+#logo1{
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	background: url('../img/thumbnail13.jpg');
+	background-repeat: no-repeat;
+	margin: 0 auto;
+	background-position-x: center;
+	background-size: cover;
+	opacity: 0.2;
+  }
+  #logo2{
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	background: url('../img/thumbnail14.jpg');
+	background-repeat: no-repeat;
+	margin: 0 auto;
+	background-position-x: center;
+	background-size: cover;
+	opacity: 0.5;
+  }
+  #logo3{
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	background: url('../img/thumbnail15.jpg');
+	background-repeat: no-repeat;
+	margin: 0 auto;
+	background-position-x: center;
+	background-size: cover;
+	opacity: 0.2;
+  }
+hr.white {
+  border-top: 1px solid white;
+}
+span.bold{
+  font-weight: bold;
+}
+.introduction{
+  font-size: 3vh;
+}
+.working-info{
+  font-size: 5vh;
+}
+.h0001{
+  font-size: 9vh;
+}
+nav{
+  background-color: rgb(24, 24, 24);
+}
+#loadedPage{
+  margin-bottom: 60px;
+}
+.bg-black-gradient{
+  background: rgb(0,0,0);
+  background: linear-gradient(45deg, rgba(0,0,0,1) 30%, rgba(21,21,21,1) 50%, rgba(0,0,0,1) 70%);
+}
+
+.audio-player {
+	position: relative;
+	width: 100%;
+	height: 0;
+	text-align: center;
+	padding-bottom: 100%;
+	background-color: rgba(0, 0, 0, 0.61);
+}
+
+.audio-player video {
+	opacity: 0;
+	transition: opacity 300ms;
+	will-change: opacity;
+}
+
+.audio-player:focus .audio-player__cover,
+.audio-player:hover .audio-player__cover,
+.audio-player.is-playing .audio-player__cover {
+	opacity: 0.35;
+}
+
+.audio-player:focus .audio-player__title,
+.audio-player:hover .audio-player__title,
+.audio-player.is-playing .audio-player__title {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.audio-player:focus .audio-player__control-icon,
+.audio-player:hover .audio-player__control-icon,
+.audio-player.is-playing .audio-player__control-icon {
+	transform: scale(1.15);
+}
+
+.audio-player.is-playing .audio-player__cover {
+	opacity: 0;
+}
+
+.audio-player.is-playing video {
+	opacity: 1;
+}
+
+.audio-player.is-playing .audio-player__control-icon:before {
+	transform: translateY(0);
+}
+
+.audio-player.is-playing .audio-player__control-icon:after {
+	transform: translateY(50px);
+}
+
+.audio-player__cover {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	transition: opacity 350ms;
+	will-change: opacity;
+}
+
+.audio-player__title {
+	position: absolute;
+	color: #fff;
+	font-size: 22px;
+	font-weight: 500;
+	left: 10px;
+	right: 10px;
+	bottom: 0;
+	top: 50%;
+	padding-top: 50px;
+	transform: translateY(-5%);
+	z-index: 10;
+	opacity: 0;
+	transition: all 300ms;
+	will-change: transform, opacity;
+}
+
+.audio-player__control {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	z-index: 20;
+	border: none;
+	background: none;
+	cursor: pointer;
+}
+
+.audio-player__control:focus {
+	outline: none;
+}
+
+.audio-player__control-icon {
+	position: absolute;
+	width: 65px;
+	height: 65px;
+	border-radius: 50%;
+	border: 3px solid #fff;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	overflow: hidden;
+	transition: all 250ms ease-out;
+	transform: scale(1);
+	will-change: transform;
+}
+.loopkit-class {
+	position: absolute;
+	width: 65px;
+	height: 65px;
+	border-radius: 50%;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	overflow: hidden;
+	transition: all 250ms ease-out;
+	transform: scale(1);
+	will-change: transform;
+}
+
+.audio-player__control-icon::after,
+.audio-player__control-icon::before {
+	transition: all 200ms;
+	will-change: transform;
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	margin: auto;
+}
+.loopkit-class::after,
+.loopkit-class::before {
+	transition: all 200ms;
+	will-change: transform;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+.audio-player__control-icon::after {
+	left: 5px;
+	width: 0;
+	height: 0;
+	border-top: 16px solid transparent;
+	border-bottom: 16px solid transparent;
+	border-left: 20px solid #fff;
+	transform: translateY(0);
+}
+
+.audio-player__control-icon::before {
+	width: 15px;
+	height: 30px;
+	border-right: 6px solid #fff;
+	border-left: 6px solid #fff;
+	transform: translateY(-50px);
+}
+
+.audio-players {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.audio-players li {
+	display: inline-block;
+	vertical-align: top;
+	max-width: 300px;
+	margin: 20px;
+}
+a, a:visited{
+	text-decoration: none;
+	color: rgb(211, 211, 212);
+}
+a:hover{
+		text-decoration: none;
+		color: lightslategray;
+}
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+
+
+
+
+
+
+
+
